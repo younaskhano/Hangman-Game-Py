@@ -1,60 +1,58 @@
-**Guess the Number - Python Project**
---------------------
+**Hangman Game - Python Project**
 
-Introduction
+**Introduction**
 
-This Python project implements a fun and engaging "Guess the Number" game. The program generates a random number between 1 and 100, and you (the user) have to guess it within the least number of attempts.
+This Python project implements a classic "Hangman" game where users try to guess a hidden word by suggesting letters. The game provides a graphical user interface (GUI) and a .exe executable file for easy access.
 
-Features
+**Features**
 
-- Random number generation between 1 and 100 (inclusive).
-- User input for guessing the number.
-- Hints for guesses being too high or too low.
-- Tracks the number of guesses.
-- Saves a high score in a file (`highscore.txt`).
-- Challenges the user to beat the high score.
+- Random word selection from a predefined list.
+- User input for guessing letters.
+- Visual representation of the hangman figure as the game progresses.
+- Tracks incorrect guesses and remaining attempts.
+- Displays the correctly guessed letters in their correct positions.
+- Provides a GUI for interactive gameplay.
 
 **New Feature: Now Includes Executable File!**
 
-This project now includes an executable file (`guess_the_number.exe`) for easy use on Windows. Simply download and run `guess_the_number.exe` to start playing immediately without needing Python installed.
+This project now includes an executable file (hangman_game.exe) for seamless use on Windows. Simply download and run hangman_game.exe to start playing immediately without the need for Python installation.
 
-Getting Started
+**Getting Started**
 
-1. **Download the Executable:**
-   - Download `guess_the_number.exe` from the repository.
-   
-2. **Run the Executable:**
-   - Double-click `guess_the_number.exe` to launch the game.
+**Download the Executable:**
 
-Gameplay
+- Download hangman_game.exe from the repository.
 
-The program will greet you and ask you to enter your guesses. As you guess, the program will provide hints:
+**Run the Executable:**
 
-- "Your guess is too low. Try again." (if your guess is lower than the number)
-- "Your guess is too high. Try again." (if your guess is higher than the number)
+- Double-click hangman_game.exe to launch the game.
 
-High Score
+**Gameplay**
 
-The game keeps track of the least number of guesses it took you to guess the number correctly. This becomes the new high score if it's lower than the previously saved high score.
+The program will display a series of underscores representing the hidden word. As you guess letters, the program will either fill in the correct positions or add parts to the hangman figure if the guess is wrong.
 
-Further Development
+**High Score**
 
-- **Difficulty Levels:** Implement different difficulty levels where the number range changes (e.g., Easy: 1-50, Medium: 1-100, Hard: 1-200).
-- **Multiple Chances:** Allow a certain number of guesses per round before the game ends.
-- **Number Range Customization:** Let users define the minimum and maximum values for the random number generation.
-- **Graphical User Interface (GUI):** Consider creating a graphical interface for a more interactive experience.
+The game tracks the number of incorrect guesses and encourages players to improve their performance by guessing the word with fewer mistakes.
 
-Example Interaction
+**Further Development**
 
-Enter your guess (between 1 and 100): 50  
-Your guess is too low. Try again.  
-Enter your guess (between 1 and 100): 75  
-Your guess is too high. Try again.  
-Enter your guess (between 1 and 100): 63  
-You guessed it right in 3 tries! You have just broken the legal high score!
+- **Word Categories:** Implement different word categories (e.g., Animals, Countries, Movies).
+- **Difficulty Levels:** Allow users to select difficulty levels that affect the word length and number of allowed incorrect guesses.
+- **Hint System:** Add a hint feature where users can request a clue at the cost of an additional incorrect guess.
+- **Multiplayer Mode:** Introduce a two-player mode where one player selects the word, and the other player tries to guess it.
 
-Thanks for playing!
+**Example Interaction**
 
----
+```
+Welcome to Hangman! Guess the word: _ _ _ _ _
+Enter a letter: e
+Correct! The word now looks like: _ e _ _ e
+Enter a letter: s
+Incorrect! The hangman figure is starting to appear.
+...
+```
 
-This format should clearly indicate to users that they can now use the `.exe` file for a simpler and more accessible gameplay experience on Windows.
+**Thanks for playing!**
+
+This format provides a clear overview of the Hangman game with its new GUI and executable features, making it more accessible and enjoyable for users on Windows.
